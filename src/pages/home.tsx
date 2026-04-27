@@ -86,6 +86,63 @@ export function Home() {
         </div>
       </section>
 
+      {/* NEW SERVICES SECTION */}
+      <section className="mx-auto max-w-5xl space-y-8 rounded-2xl border border-[#ace9e5] bg-[#f5fdfa] px-4 py-12">
+        <h2 className="text-center text-2xl font-bold text-[#247669] sm:text-3xl">Our Services</h2>
+        <p className="mx-auto max-w-2xl text-center text-[#37695f] text-base mb-8">
+          Discover what we offer to elevate your business and brand. Explore all service details or ask us about custom solutions.
+        </p>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Card className="border-[#bae5d9] bg-white shadow-md">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-lg text-[#1c4741]">
+                <span className="inline-block h-8 w-8 rounded-full bg-[#3ee1c6] text-white flex items-center justify-center font-bold text-xl">💡</span>
+                Creative Consulting
+              </CardTitle>
+              <CardDescription className="text-[#567e74]">
+                Get actionable insights and roadmaps for breakout growth.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-sm text-[#567e74]">
+              Workshops, brainstorming, and strategy tailored to your unique position, goals, and vision.
+            </CardContent>
+          </Card>
+          <Card className="border-[#bae5d9] bg-white shadow-md">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-lg text-[#1c4741]">
+                <span className="inline-block h-8 w-8 rounded-full bg-[#725bd9] text-white flex items-center justify-center font-bold text-xl">📱</span>
+                Mobile Experience
+              </CardTitle>
+              <CardDescription className="text-[#567e74]">
+                Seamless mobile-first design and progressive web apps.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-sm text-[#567e74]">
+              Intuitive mobile UIs, PWA expertise, and mobile optimization for your audience on the go.
+            </CardContent>
+          </Card>
+          <Card className="border-[#bae5d9] bg-white shadow-md">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-lg text-[#1c4741]">
+                <span className="inline-block h-8 w-8 rounded-full bg-[#ffca21] text-white flex items-center justify-center font-bold text-xl">📊</span>
+                Analytics & Insights
+              </CardTitle>
+              <CardDescription className="text-[#567e74]">
+                Make every move count with clear data-driven guidance.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-sm text-[#567e74]">
+              Metrics dashboards, campaign ROI tracking, and recommendations so you always know what works.
+            </CardContent>
+          </Card>
+        </div>
+        <div className="mt-8 text-center">
+          <Button asChild size="lg" className="bg-[#247669] text-white shadow-lg hover:bg-[#145a49]">
+            <Link to="/services">See All Services</Link>
+          </Button>
+        </div>
+      </section>
+
       {/* TESTIMONIALS */}
       <section className="mx-auto max-w-5xl space-y-8">
         <h2 className="text-center text-2xl font-bold text-[#26170e] sm:text-3xl">What Clients Say</h2>
